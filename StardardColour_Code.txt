@@ -1,0 +1,4 @@
+1.  #2C4771--> light colour(summary) , Red(44), Green(71), Blue(113)
+2.  #1E2F4B--> (UK road), Red(30), Green(47), Blue(75)
+3.  #539DDF-->(graph line), Red(83), Green(157), Blue(223)
+4.  #558BBD--> (bargraph), Red(85), Green(139),Blue(189)
