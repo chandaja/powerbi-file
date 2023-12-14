@@ -1,0 +1,7 @@
+Step1 --.we will understand the data and validate it 
+
+Step 2 -- we will think of what metrics we can show and tabs we can create 
+
+Step3 -- we will add this to excel and show in excel this what we are planning
+
+Step4 -- building model in power bi and calculated column and measure 
