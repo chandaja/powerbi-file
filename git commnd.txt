@@ -1,0 +1,322 @@
+chandaja@CSGBTPLT679 MINGW64 ~
+$ mkdir demo
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ cd demo
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo
+$ git init
+Initialized empty Git repository in C:/Users/chandaja/demo/.git/
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (master)
+$ git branch -m main
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/chandaja/demo/.git/
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ ls
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ ls -a
+./  ../  .git/
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ cd .git
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ ls
+config  description  HEAD  hooks/  info/  objects/  refs/
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ cd main
+bash: cd: main: No such file or directory
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$
+
+------------------------------------------------06/12-----------------------------------------------------
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ mkdir demo
+mkdir: cannot create directory ‘demo’: File exists
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ cd demo
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/chandaja/demo/.git/
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo (main)
+$ cd .git
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ cd main
+bash: cd: main: No such file or directory
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global user.name "chandaja"
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global user.email "chandana.jagadish@global-csg.com"
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config -- global --list
+error: key does not contain a section: global
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global --list
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=chandaja
+user.email=chandana.jagadish@global-csg.com
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global init.defaultBranch main
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global --list
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=chandaja
+user.email=chandana.jagadish@global-csg.com
+init.defaultbranch=main
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global --unset user.email
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global --list
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+user.name=chandaja
+init.defaultbranch=main
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --global user.email "chandana.jagadish@global-csg.com"
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local user.name "chandaja"
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local user.email "chandana.jagadish@global-csg.com"
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=chandaja
+user.email=chandana.jagadish@global-csg.com
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local init.defaultBranch main
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local --list
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+user.name=chandaja
+user.email=chandana.jagadish@global-csg.com
+init.defaultbranch=main
+
+chandaja@CSGBTPLT679 MINGW64 ~/demo/.git (GIT_DIR!)
+$ git config --local user.email "chandana.jagadish@global-csg.com"
+
+-------------------------------------------------------07/12----------------------------------
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ git clone https://github.com/chandaja/data.git
+Cloning into 'data'...
+info: please complete authentication in your browser...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ git config --global user.name "ChandanaJ"
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ git ssh-keygen git@github.com:chandaja/data.git
+git: 'ssh-keygen' is not a git command. See 'git --help'.
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ git add ReadME.md
+fatal: not a git repository (or any of the parent directories): .git
+
+chandaja@CSGBTPLT679 MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/chandaja/.git/
+
+chandaja@CSGBTPLT679 MINGW64 ~ (main)
+$ cd data
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ ssh-keygen git@github.com:chandaja/data.git
+Too many arguments.
+usage: ssh-keygen [-q] [-a rounds] [-b bits] [-C comment] [-f output_keyfile]
+                  [-m format] [-N new_passphrase] [-O option]
+                  [-t dsa | ecdsa | ecdsa-sk | ed25519 | ed25519-sk | rsa]
+                  [-w provider] [-Z cipher]
+       ssh-keygen -p [-a rounds] [-f keyfile] [-m format] [-N new_passphrase]
+                   [-P old_passphrase] [-Z cipher]
+       ssh-keygen -i [-f input_keyfile] [-m key_format]
+       ssh-keygen -e [-f input_keyfile] [-m key_format]
+       ssh-keygen -y [-f input_keyfile]
+       ssh-keygen -c [-a rounds] [-C comment] [-f keyfile] [-P passphrase]
+       ssh-keygen -l [-v] [-E fingerprint_hash] [-f input_keyfile]
+       ssh-keygen -B [-f input_keyfile]
+       ssh-keygen -D pkcs11
+       ssh-keygen -F hostname [-lv] [-f known_hosts_file]
+       ssh-keygen -H [-f known_hosts_file]
+       ssh-keygen -K [-a rounds] [-w provider]
+       ssh-keygen -R hostname [-f known_hosts_file]
+       ssh-keygen -r hostname [-g] [-f input_keyfile]
+       ssh-keygen -M generate [-O option] output_file
+       ssh-keygen -M screen [-f input_file] [-O option] output_file
+       ssh-keygen -I certificate_identity -s ca_key [-hU] [-D pkcs11_provider]
+                  [-n principals] [-O option] [-V validity_interval]
+                  [-z serial_number] file ...
+       ssh-keygen -L [-f input_keyfile]
+       ssh-keygen -A [-a rounds] [-f prefix_path]
+       ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
+                  file ...
+       ssh-keygen -Q [-l] -f krl_file [file ...]
+       ssh-keygen -Y find-principals -s signature_file -f allowed_signers_file
+       ssh-keygen -Y match-principals -I signer_identity -f allowed_signers_file
+       ssh-keygen -Y check-novalidate -n namespace -s signature_file
+       ssh-keygen -Y sign -f key_file -n namespace file [-O option] ...
+       ssh-keygen -Y verify -f allowed_signers_file -I signer_identity
+                  -n namespace -s signature_file [-r krl_file] [-O option]
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git add C:\Users\chandaja\Documents\GitHub\SledgeWood Stores_Sales_Dashboard.pbix
+fatal: C:UserschandajaDocumentsGitHubSledgeWood: 'C:UserschandajaDocumentsGitHubSledgeWood' is outside repository at 'C:/Users/chandaja/data'
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git add SledgeWood Stores_Sales_Dashboard.pbix
+fatal: pathspec 'SledgeWood' did not match any files
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git add C:\Users\chandaja\Documents\git commnd.txt
+fatal: C:UserschandajaDocumentsgit: 'C:UserschandajaDocumentsgit' is outside repository at 'C:/Users/chandaja/data'
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git add git commnd.txt
+fatal: pathspec 'git' did not match any files
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git add  commnd.txt
+fatal: pathspec 'commnd.txt' did not match any files
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git commit -m "added"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$ git push command.txt
+fatal: 'command.txt' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+chandaja@CSGBTPLT679 MINGW64 ~/data (main)
+$
+-------------------07/12-----------------
+chandaja@CSGBTPLT679 MINGW64 ~ (main)
+$ git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+chandaja@CSGBTPLT679 MINGW64 ~ (main)
